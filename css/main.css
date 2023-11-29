@@ -173,6 +173,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 66.10169492%; 
+  color: #ab7626;
 }
 
 
@@ -228,7 +229,7 @@ h4, .section-description {
 
 a {
   border-bottom: 0.5px solid #2C2622;
-  color: #ff9800;
+  color: #ab7626;
   text-decoration: none;
 }
 a:hover {
@@ -557,7 +558,7 @@ footer.site-header .site-page a {
 .site-info .site-info-wrapper img {
   max-width: 100%;
 }
-.site-info .site-info-wrapper .with-dropcap:first-letter {
+.site-info .site-info-wrapper .side-text:first-letter {
   float: left;
   font-family: regardsregular, sans-serif;
   font-feature-settings: "swsh";
@@ -587,7 +588,7 @@ footer.site-header .site-page a {
   text-transform: uppercase;
 }
 .social-links a {
-  color: #ffa000;
+  color: #ab7626;
   display: flex;
   width: 100%;
   align-items: center;
@@ -779,6 +780,28 @@ footer.site-header .site-page a {
 }
 
 
+.contact-hero {
+  
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/Digital/almost\ done.jpg);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ab7626;
+  text-shadow: 1px 1px 1px #000;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  margin: 0px;
+}
 
 /* Tablet styles -------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -1085,3 +1108,7 @@ footer.site-header .site-page a {
   }
 }
 
+.thanks {
+  display: flex;
+  justify-content: center;
+}

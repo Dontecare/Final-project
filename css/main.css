@@ -153,7 +153,7 @@ body {
   overflow: hidden;
 }
 
-.site-wrapper {
+.site-inner-wrapper {
   overflow: hidden;
   position: relative;
 }
@@ -661,8 +661,8 @@ footer.site-header .site-page a {
 .contact-style.section-info {
   display: block;
 }
-.contact-style .section-info .flex-links,
-.contact-style .section-info .site-subscription {
+.contact-style.section-info .flex-links,
+.contact-style.section-info .site-subscription {
   margin-top: 40px;
   width: 100%;
 }
@@ -670,7 +670,7 @@ footer.site-header .site-page a {
   font-size: 16px;
   margin-bottom: 16px;
 }
-.contact-style.section-info .mc-field-group {
+.contact-style.section-info .site-subscription-group {
   width: 75%;
 }
 .contact-style.section-info .optionalParent {
@@ -759,11 +759,11 @@ footer.site-header .site-page a {
   flex-grow: 1;
 }
 
-.email-signup {
+.site-subscription-signup {
   display: flex;
   justify-content: space-between;
 }
-.email-signup div {
+.site-subscription-signup div {
   flex-grow: 1;
 }
 
@@ -1155,11 +1155,11 @@ footer.site-header .site-page a {
     font-size: 12px;
   }
 
-  .email-signup {
+  .site-subscription-signup {
     display: block;
   }
 
-  .contact-style.section-info .mc-field-group {
+  .contact-style.section-info .site-subscription-group {
     width: 100%;
   }
 

@@ -6,12 +6,9 @@
 }
 
 .item{
-  padding: 5px;
-}
-
-.items{
-  padding: 5px;
-  padding-bottom: 30px;
+  margin-right: auto;
+  padding-right: 36px;
+  padding-left: 1px;
 }
 
 body {
@@ -39,15 +36,15 @@ body {
     overflow: hidden;
 
     &:nth-of-type(1) {
-      background: url("../img/IMG_8607.PNG");
+      background: url("../img/drawing/smaller.JPG");
       no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("../img/Digital/68961556439__03E752B5-380F-4911-8935-D9F2B5170C04.jpg")
+      background: url("../img/Digital/portrait2.jpg")
         no-repeat 50% / cover;
     }
     &:nth-of-type(3) {
-      background: url("../img/photography/67322280691__609E27CC-3503-4CC0-84C0-65FEF08E2F8F.jpg")
+      background: url("../img/photography/photo.jpg")
         no-repeat 50% / cover;
     }
 
@@ -138,7 +135,7 @@ table {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #494641;
+  background: #362100;
   color: #292420;
   margin: 0;
   height: 100%;
@@ -156,7 +153,7 @@ body {
   overflow: hidden;
 }
 
-.site-inner-wrapper {
+.site-wrapper {
   overflow: hidden;
   position: relative;
 }
@@ -193,10 +190,10 @@ section {
 }
 .site-header a {
   border-bottom: 0.5px solid #faefdd;
-  color: #faefdd;
+  color: #ff9d00;
 }
 .site-header a:hover {
-  color: #f0d09a;
+  color: #ff0000;
 }
 .site-header .site-name a:hover {
   color: #f0d09a;
@@ -256,17 +253,15 @@ h4, .section-description {
 
 a {
   border-bottom: 0.5px solid #2C2622;
-  color: #2C2622;
+  color: #ff9800;
   text-decoration: none;
 }
 a:hover {
   border-bottom: 0.5px solid #f0d09a;
-  color: #e09b2b;
+  color: #ff0000;
 }
 
-em {
-  font-style: italic;
-}
+
 
 strong {
   font-weight: 600;
@@ -284,7 +279,7 @@ strong {
 }
 
 .section-link,
-.text-page .section-link {
+.site-info .section-link {
   border-bottom: 0.5px solid #2C2622;
   display: inline-block;
   font-size: 14px;
@@ -297,15 +292,12 @@ strong {
   margin-top: 24px;
 }
 
-.nowrap {
-  white-space: nowrap;
-}
 
 /* Header and footer styles --------------------------------------------------------
 ------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------- */
 header, footer {
-  background: #faefdd;
+  background: #880000;
 }
 
 header .site-header-wrapper,
@@ -363,8 +355,8 @@ footer.site-header .site-page a {
 
 header.site-header .site-page a,
 footer.site-header .site-page a {
-  color: #fbf1e1;
-  border-bottom: 0.5px solid #fbf1e1;
+  color: #ff9d00;
+  border-bottom: 0.5px solid #915c07;
 }
 
 .site-name {
@@ -556,8 +548,8 @@ footer.site-header .site-page a {
 
 
 
-.newsletter label,
-.newsletter input[type=submit],
+.site-subscription label,
+.site-subscription input[type=submit],
 .articles-preview li .link {
   font-family: "logic-monospace", mono;
   font-weight: 400;
@@ -570,58 +562,58 @@ footer.site-header .site-page a {
   text-align: left;
 }
 
-.newsletter input[type=submit] {
+.site-subscription input[type=submit] {
   color: #2C2622;
 }
 
 /* /* About page styles ---------------------------------------------------------------
 ------------------------------------------------------------------------------------
---------------------------------------------------------------------------------- 
-.text-page {
+/* ---------------------------------------------------------------------------------  */
+.site-info {
   display: flex;
   justify-content: space-between;
   padding: 0 0 0 8.474576271%; 
 }
-.text-page .main {
+.site-info .site-info-wrapper {
   width: 72.22222222%; 
 }
-.text-page .main.full-main {
+.site-info .site-info-wrapper.full-main {
   width: 100%; 
 }
-.text-page .main h2 {
+.site-info .site-info-wrapper h2 {
   font-size: 48px;
   margin: 24px 0;
 }
-.text-page .main h2:first-of-type {
+.site-info .site-info-wrapper h2:first-of-type {
   margin-top: 0;
 }
-.text-page .main h3 {
+.site-info .site-info-wrapper h3 {
   font-size: 36px;
 }
-.text-page .main ul, .text-page .main ol {
+.site-info .site-info-wrapper ul, .site-info .site-info-wrapper ol {
   margin: 0 0 40px 40px;
 }
-.text-page .main p {
+.site-info .site-info-wrapper p {
   margin-bottom: 24px;
 }
-.text-page .main li {
+.site-info .site-info-wrapper li {
   margin-bottom: 12px;
 }
-.text-page .main ul li {
+.site-info .site-info-wrapper ul li {
   list-style-type: disc;
   margin-left: 22px;
 }
-.text-page .main li ul {
+.site-info .site-info-wrapper li ul {
   margin-top: 16px;
 }
-.text-page .main li ul li {
+.site-info .site-info-wrapper li ul li {
   font-size: 24px;
   margin-bottom: 12px;
 }
-.text-page .main img {
+.site-info .site-info-wrapper img {
   max-width: 100%;
 }
-.text-page .main .with-dropcap:first-letter {
+.site-info .site-info-wrapper .with-dropcap:first-letter {
   float: left;
   font-family: regardsregular, sans-serif;
   font-feature-settings: "swsh";
@@ -629,18 +621,18 @@ footer.site-header .site-page a {
   font-size: 84px;
   line-height: 80px;
 }
-.text-page strong {
+.site-info strong {
   font-weight: 700;
 }
-.text-page .inset-image {
+.site-info .about-image {
   border: 0.5px solid #2C2622;
   float: left;
   margin: 0 40px 24px 0;
   padding: 16px;
   width: 33%;
-} */
+} 
 
-.social-list li {
+.social-links li {
   font-family: "logic-monoscript", mono;
   font-weight: 300;
   font-style: normal;
@@ -651,81 +643,81 @@ footer.site-header .site-page a {
   text-transform: uppercase;
 }
 
-.social-list a {
+.social-links a {
   color: #ffa000;
   display: flex;
   width: 100%;
   align-items: center;
 }
 
-.social-list a:hover {
+.social-links a:hover {
   color: #ff0000;
 }
 
-.stay-in-touch {
+.contact-style {
   display: flex;
   column-gap: 3.389830508%;
 }
-.stay-in-touch.section-info {
+.contact-style.section-info {
   display: block;
 }
-.stay-in-touch.section-info .wide-list,
-.stay-in-touch.section-info .newsletter {
+.contact-style .section-info .flex-links,
+.contact-style .section-info .site-subscription {
   margin-top: 40px;
   width: 100%;
 }
-.stay-in-touch.section-info h3 {
+.contact-style.section-info h3 {
   font-size: 16px;
   margin-bottom: 16px;
 }
-.stay-in-touch.section-info .mc-field-group {
+.contact-style.section-info .mc-field-group {
   width: 75%;
 }
-.stay-in-touch.section-info .optionalParent {
+.contact-style.section-info .optionalParent {
   width: 25%;
 }
-.stay-in-touch.section-info .optionalParent input {
+.contact-style.section-info .optionalParent input {
   width: 100%;
 }
 
-.wide-list,
-.newsletter {
+.flex-links,
+.site-subscription {
   width: 30.6122449%; 
 }
-.wide-list h3,
-.newsletter h3 {
+.flex-links h3,
+.site-subscription h3 {
   font-size: 18px;
   margin-bottom: 24px;
   margin-top: 0;
 }
 
-.wide-list ul {
+.flex-links ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 24px;
   grid-auto-rows: 1fr;
 }
-.wide-list li {
+.flex-links li {
   margin-top: 4px;
 }
 
-.newsletter {
+.site-subscription {
   box-sizing: border-box;
 }
-.newsletter h3 {
+.site-subscription h3 {
   margin-bottom: 24px;
 }
-.newsletter p {
+.site-subscription p {
   margin: 0 0 40px 0;
   font-size: 16px;
 }
-.newsletter label {
+.site-subscription label {
   display: block;
   margin-bottom: 8px;
 }
-.newsletter input[type=text],
-.newsletter input[type=email] {
+.site-subscription input[type=text],
+.site-subscription input[type=email] {
   background: none;
   border: none;
   border-bottom: 1px solid #faefdd;
@@ -736,14 +728,14 @@ footer.site-header .site-page a {
   box-sizing: border-box;
   margin-bottom: 24px;
 }
-.newsletter input[type=email] {
+.site-subscription input[type=email] {
   background: #2C2622;
   font-family: "Quasimoda", "ivyora-text", sans-serif;
   flex-grow: 1;
   border: 0.5px solid #faefdd;
   padding: 8px;
 }
-.newsletter input[type=submit] {
+.site-subscription input[type=submit] {
   background: #ff9f02;
   border: none;
   display: block;
@@ -754,7 +746,7 @@ footer.site-header .site-page a {
   text-align: center;
   font-size: 14px;
 }
-.newsletter input[type=submit]:hover {
+.site-subscription input[type=submit]:hover {
   cursor: pointer;
   background: #ee0a0a;
 }
@@ -775,14 +767,14 @@ footer.site-header .site-page a {
   flex-grow: 1;
 }
 
-.interviews {
+.philosophy {
   background: #2C2622 url(../img/bg-meteor-shower.webp) 50% top no-repeat;
   background-size: 100%;
 }
-.interviews h3 {
+.philosophy h3 {
   margin-top: 0;
 }
-.interviews p {
+.philosophy p {
   font-family: "logic-monoscript", mono;
   font-weight: 400;
   font-style: normal;
@@ -792,34 +784,34 @@ footer.site-header .site-page a {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-.interviews ul {
+.philosophy ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 3.389830508%; /* 48/1416 */
   row-gap: 40px;
 }
-.interviews li {
+.philosophy li {
   display: block;
   margin-bottom: 32px;
 }
-.interviews li a {
+.philosophy li a {
   background: #0003ff03;
   border: 0.5px solid #fb0b0b;
   height: 100%;
   display: block;
   padding: 32px 32px 0 32px;
 }
-.interviews a {
+.philosophy a {
   text-decoration: none;
 }
-.interviews a:hover {
+.philosophy a:hover {
   text-decoration: underline;
 }
-.interviews a h3 {
+.philosophy a h3 {
   color: #FF9800;
 }
-.interviews p:after {
+.philosophy p:after {
   content: "↗";
   display: inline-block;
   font-family: mono;
@@ -828,7 +820,7 @@ footer.site-header .site-page a {
   line-height: 8px;
 }
 
-.featured-inner {
+.featured-inside {
   background-size: cover;
   position: absolute;
   top: 0;
@@ -841,16 +833,16 @@ footer.site-header .site-page a {
 
 
 
-.outer-frame {
+.section-border {
   padding: 24px;
 }
-.outer-frame .frame-inner {
+.section-border .section-frame {
   border: 0.5px solid #ff0000;
   background-color: #0003ff03;
   overflow: hidden;
   position: relative;
 }
-.outer-frame .site-header-wrapper {
+.section-border .site-header-wrapper {
   max-width: 1416px;
   margin: 0 auto;
   padding: 80px 7.01754386%; /* 120/1368 */
@@ -881,7 +873,7 @@ footer.site-header .site-page a {
   }
 
   .site-header-wrapper,
-  .outer-frame .site-header-wrapper {
+  .section-border .site-header-wrapper {
     padding: 64px 40px;
   }
   .section-main,
@@ -912,29 +904,29 @@ footer.site-header .site-page a {
   .work-title h2 {
     margin-bottom: 8px;
   }
-  .interviews ul {
+  .philosophy ul {
     display: block;
     margin: 64px auto 0 auto;
     width: 75%;
   }
-  .interviews ul li {
+  .philosophy ul li {
     margin-top: 24px;
   }
   .work-preview {
     padding: 32px 0;
   }
-  .text-page {
+  .site-info {
     display: block;
     padding: 0;
   }
-  .text-page .main, .text-page .aside {
+  .site-info .site-info-wrapper, .site-info .side-links {
     width: 100%;
   }
-  .text-page .main p, .text-page .main li {
+  .site-info .site-info-wrapper p, .site-info .site-info-wrapper li {
     font-size: 16px;
     line-height: 1.4em;
   }
-  .text-page .aside {
+  .site-info .side-links {
     border-top: 0.5px solid #2C2622;
     margin-top: 40px;
     padding: 40px 0 0 0;
@@ -942,22 +934,14 @@ footer.site-header .site-page a {
   .contact {
     background-size: 15%;
   }
-  .articles ul,
-  .faqs ul {
-    display: block;
-  }
-
-  .interviews ul {
+  .philosophy ul {
     margin-top: 32px;
   }
-  .interviews li a {
+  .philosophy li a {
     padding: 16px;
   }
   .portfolio-grid li {
     margin-bottom: 40px;
-  }
-  .rising-sun {
-    background-image: none;
   }
   .work-banner {
     background: #faefdd;
@@ -968,10 +952,7 @@ footer.site-header .site-page a {
   .work-banner h1 {
     margin-bottom: 16px;
   }
-  .star-lady,
-  .star-owl {
-    display: none;
-  }
+
   .latest-article {
     display: block;
   }
@@ -985,13 +966,13 @@ footer.site-header .site-page a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
-  .stay-in-touch {
+  .contact-style {
     display: block;
   }
-  .stay-in-touch div {
+  .contact-style div {
     width: 100%;
   }
-  .stay-in-touch .newsletter {
+  .contact-style .site-subscription {
     margin-top: 32px;
   }
 }
@@ -1005,9 +986,6 @@ footer.site-header .site-page a {
   }
 }
 @media only screen and (max-width: 480px) {
-  .article-text {
-    width: 100%;
-  }
   .work-navigation {
     margin-bottom: 40px;
     padding: 0;
@@ -1025,9 +1003,6 @@ footer.site-header .site-page a {
   header li, footer li {
     margin-left: 16px;
   }
-  .emphasized {
-    font-size: 20px;
-  }
   .site-hero .site-header-wrapper {
     padding-bottom: 24px;
     padding-top: 24px;
@@ -1043,9 +1018,6 @@ footer.site-header .site-page a {
   }
   .contact {
     background-image: none;
-  }
-  .orbit {
-    display: none;
   }
   .work-preview .two-col,
   .work-preview .three-col {
@@ -1069,29 +1041,16 @@ footer.site-header .site-page a {
   .work-preview .featured-cards div {
     padding: 24px 24px 8px 24px;
   }
-  .text-page .inset-image {
+  .site-info .about-image {
     float: none;
     width: 100%;
     box-sizing: border-box;
-  }
-  .latest-article {
-    margin: 24px 0 0 0;
-    padding: 24px;
   }
   .site-hero .recent-articles.site-header-wrapper {
     padding-top: 40px;
   }
   .site-hero .recent-articles.site-header-wrapper ul {
     display: block;
-  }
-  .image-description {
-    padding: 16px 0 24px 0;
-  }
-  .article-gallery {
-    display: block;
-  }
-  .article-gallery figure {
-    margin-bottom: 32px;
   }
 }
 /* Mobile styles -------------------------------------------------------------------
@@ -1101,7 +1060,7 @@ footer.site-header .site-page a {
   .site-main-wrapper {
     margin: 16px;
   }
-  .outer-frame {
+  .section-border {
     padding: 16px;
   }
   .site-name {
@@ -1129,13 +1088,13 @@ footer.site-header .site-page a {
     padding-left: 0;
   }
   header li, footer li, header.site-header li, footer.site-header li {
-    font-size: 12px;
-    margin-left: 12px;
+    font-size: 11px;
+    margin-left: auto;
   }
   .section-main,
   .section-info,
-  .text-page,
-  .interviews ul {
+  .site-info,
+  .philosophy ul {
     box-sizing: border-box;
     width: 100%;
   }
@@ -1163,20 +1122,18 @@ footer.site-header .site-page a {
     line-height: 1.4em;
   }
 
-  .text-page .main p,
-  .text-page .main li {
+  .site-info .site-info-wrapper p,
+  .site-info .site-info-wrapper li {
     font-size: 14px;
     line-height: 1.6em;
     margin-bottom: 16px;
   }
-  .alt-body {
-    font-size: 14px;
-  }
+
   .section-link {
     font-size: 12px;
   }
   .site-header-wrapper,
-  .outer-frame .site-header-wrapper {
+  .section-border .site-header-wrapper {
     padding: 24px;
   }
 
@@ -1194,7 +1151,7 @@ footer.site-header .site-page a {
     padding: 16px;
   }
 
-  .social-list li {
+  .social-links li {
     font-size: 12px;
   }
 
@@ -1202,15 +1159,15 @@ footer.site-header .site-page a {
     display: block;
   }
 
-  .stay-in-touch.section-info .mc-field-group {
+  .contact-style.section-info .mc-field-group {
     width: 100%;
   }
 
-  .newsletter input[type=text], .newsletter input[type=email] {
+  .site-subscription input[type=text], .site-subscription input[type=email] {
     margin-bottom: 0;
   }
 
-  .stay-in-touch.section-info .optionalParent {
+  .contact-style.section-info .optionalParent {
     width: 50%;
   }
 }

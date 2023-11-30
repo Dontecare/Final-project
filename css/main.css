@@ -396,7 +396,6 @@ footer.site-header .site-page a {
   max-width: 100%;
 }
 .site-info .site-info-wrapper .side-text:first-letter {
-  float: left;
   font-family: regardsregular, sans-serif;
   font-feature-settings: "swsh";
   margin: 8px 12px 0 0;
@@ -408,7 +407,6 @@ footer.site-header .site-page a {
 }
 .site-info .about-image {
   border: 0.5px solid #2C2622;
-  float: left;
   margin: 0 40px 24px 0;
   padding: 16px;
   width: 33%;
@@ -711,7 +709,6 @@ footer.site-header .site-page a {
   max-width: 100%;
 }
 .portfolio-info .portfolio-info-wrapper .side-text:first-letter {
-  float: left;
   font-family: regardsregular, sans-serif;
   font-feature-settings: "swsh";
   margin: 8px 12px 0 0;
@@ -723,7 +720,6 @@ footer.site-header .site-page a {
 }
 .portfolio-info .portfolio-image {
   border: 0.5px solid #2C2622;
-  float: left;
   margin: 0 40px 24px 0;
   padding: 16px;
   width: 33%;
@@ -860,7 +856,6 @@ footer.site-header .site-page a {
 
   .site-info .about-image,
   .portfolio-info .portfolio-image {
-    float: none;
     width: 100%;
     box-sizing: border-box;
   }

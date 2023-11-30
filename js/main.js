@@ -10,7 +10,7 @@ function myFunction() {
 
 // select images by class name
 var img = document.getElementsByClassName('portfolio-image');
-var modalImg = document.getElementById("img");
+var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
 // show modal function

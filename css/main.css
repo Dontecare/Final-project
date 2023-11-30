@@ -1,3 +1,92 @@
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 /* Expanding picture caroussel */
 @media (max-width: 480px) {
   .options {
@@ -159,7 +248,7 @@ body {
 }
 
 .site-header-wrapper {
-  max-width: 1416px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 80px 8.474576271%; 
 }
@@ -525,7 +614,7 @@ footer.site-header .site-page a {
 }
 .site-subscription input[type=submit]:hover {
   cursor: pointer;
-  background: #ee0a0a;
+  background: #750000;
 }
 .site-subscription-signup {
   display: flex;
@@ -565,7 +654,7 @@ footer.site-header .site-page a {
 }
 .philosophy li a {
   background: #0003ff03;
-  border: 0.5px solid #fb0b0b;
+  border: 0.5px solid #750000;
   height: 100%;
   display: block;
   padding: 32px 32px 0 32px;
@@ -603,13 +692,13 @@ footer.site-header .site-page a {
   padding: 24px;
 }
 .section-border .section-frame {
-  border: 0.5px solid #ff0000;
+  border: 0.5px solid #750000;
   background-color: #0003ff03;
   overflow: hidden;
   position: relative;
 }
 .section-border .site-header-wrapper {
-  max-width: 1416px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 80px 7.01754386%; /* 120/1368 */
 }
@@ -638,28 +727,6 @@ footer.site-header .site-page a {
   margin: 0px;
 }
 
-.portfolio-hero {
-  
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.55), 
-      rgba(0, 0, 0, 0.55)
-    ),
-    /* bottom, image */
-    url(../img/Digital/portrait.jpg);
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ab7626;
-  text-shadow: 1px 1px 1px #000;
-  min-height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  margin: 0px;
-}
 
 /* /* portfolio page styles ---------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -721,9 +788,63 @@ footer.site-header .site-page a {
 .portfolio-info .portfolio-image {
   border: 0.5px solid #2C2622;
   margin: 0 40px 24px 0;
-  padding: 16px;
+  box-shadow: inset 20em 10em #2c2622;
+  padding: 10px;
   width: 33%;
 } 
+
+.digital-hero { 
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/portfolio/hero1.jpg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ab7626;
+    text-shadow: 1px 1px 1px #000;
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin: 0px;
+}
+.photography-hero { 
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/Digital/portrait.jpg);
+}
+.drawing-hero { 
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/Digital/portrait.jpg);
+}
+
+.page-layout {
+display: flex;
+width: 100%;
+flex-direction: row;
+height: auto;
+}
+.page-layout-reverse {
+  display: flex;
+  flex-direction:row-reverse;
+  width: 100%;
+  height: auto;
+  }
 
 /* Tablet styles -------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -866,9 +987,7 @@ footer.site-header .site-page a {
     display: block;
   }
 }
-/* Mobile styles -------------------------------------------------------------------
-------------------------------------------------------------------------------------
---------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 480px) {
   .site-main-wrapper {
     margin: 16px;
@@ -980,6 +1099,11 @@ footer.site-header .site-page a {
 
   .contact-style.section-info .optionalParent {
     width: 50%;
+  }
+
+  .page-layout,
+  .page-layout-reverse{
+    flex-direction:column
   }
 }
 

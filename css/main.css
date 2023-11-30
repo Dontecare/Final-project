@@ -225,7 +225,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #362100;
-  color: #292420;
+  color: #4b0000e3;
+  text-shadow: 2px 2px 4px #000000;
   margin: 0;
   height: 100%;
   font-family: "Quasimoda", "ivyora-text", sans-serif;
@@ -267,13 +268,16 @@ body {
 
 
 section {
-  background: #bfb3a1;
+  background: #d4a867;
+  /* background: #bfb3a1; */
   /* background: #faefdd; */
   /* background: #a96809c7; */
 }
 
 .site-header {
-  background: #2C2622;
+  background: #060605b8;
+  /* background: #180a01; */
+  /* background: #2C2622; */
   color: #ff9800;
 }
 
@@ -318,6 +322,7 @@ h4, .section-description {
 
 a {
   border-bottom: 0.5px solid #2C2622;
+  text-shadow: 2px 2px 4px #000000;
   color: #ab7626;
   text-decoration: none;
 }
@@ -331,6 +336,7 @@ strong {
 }
 
 .section-link,
+.page-link,
 .site-info .section-link {
   border-bottom: 0.5px solid #2C2622;
   display: inline-block;
@@ -344,12 +350,15 @@ strong {
   margin-top: 24px;
 }
 
+.page-link {
+  color:#4b0000e3;
+}
 
 /* Header and footer styles --------------------------------------------------------
 ------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------- */
-header, footer {
-  background: #4b0000;
+footer {
+  background: #4b0000e3;
 }
 header .site-header-wrapper,
 footer .site-header-wrapper,
@@ -625,7 +634,9 @@ footer.site-header .site-page a {
 }
 
 .philosophy {
-  background: #2C2622;
+  background: #060605b8;
+  /* background: #180a01; */
+  /* background: #2C2622; */
   background-size: 100%;
 }
 .philosophy h3 {
@@ -822,6 +833,18 @@ footer.site-header .site-page a {
     ),
     /* bottom, image */
     url(../img/Digital/portrait.jpg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ab7626;
+    text-shadow: 1px 1px 1px #000;
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin: 0px;
 }
 .drawing-hero { 
   background: 
@@ -830,7 +853,19 @@ footer.site-header .site-page a {
       rgba(0, 0, 0, 0.55)
     ),
     /* bottom, image */
-    url(../img/Digital/portrait.jpg);
+    url(../img/portfolio/herohand.jpg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ab7626;
+    text-shadow: 1px 1px 1px #000;
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin: 0px;
 }
 
 .page-layout {
@@ -849,7 +884,7 @@ height: auto;
 /* Tablet styles -------------------------------------------------------------------
 ------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------- */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   header,
   header.site-header {
     height: auto;
@@ -1059,7 +1094,8 @@ height: auto;
     margin-bottom: 16px;
   }
 
-  .section-link {
+  .section-link,
+  .page-link {
     font-size: 12px;
   }
   .site-header-wrapper,

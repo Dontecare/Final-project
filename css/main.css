@@ -1,6 +1,7 @@
 #myImg {
   border-radius: 5px;
   cursor: pointer;
+  height: 405px;
   transition: 0.3s;
 }
 
@@ -10,31 +11,22 @@
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
 }
 
 .portfolio-image {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 100%; /* Updated width to fill the screen */
   max-width: 700px;
 }
 
@@ -49,6 +41,10 @@
   height: 150px;
 }
 
+.modal-content {
+  max-width: 100%;
+}
+
 .modal-content,
 #caption {
   animation-name: zoom;
@@ -57,10 +53,10 @@
 
 @keyframes zoom {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
   to {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
@@ -138,7 +134,7 @@ body {
     }
     
     .links {
-      padding: 10px;
+      padding: 30px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -259,7 +255,8 @@ body {
 
 .section-info {
   margin: 0 auto;
-  width: 49.01129944%; 
+  width: 49.01129944%;
+   
 }
 
 .section-main {
@@ -271,7 +268,8 @@ body {
 
 
 section {
-  background: #d4a867;
+  background: #b7b7b7;
+  /* background: #d4a867; */
   /* background: #bfb3a1; */
   /* background: #faefdd; */
   /* background: #a96809c7; */

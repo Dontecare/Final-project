@@ -833,7 +833,7 @@ footer.site-header .site-page a {
       rgba(0, 0, 0, 0.55)
     ),
     /* bottom, image */
-    url(../img/Digital/portrait.jpg);
+    url(../img/photography/photohero.jpg);
 
     display: flex;
     align-items: center;
@@ -1148,3 +1148,24 @@ height: auto;
   display: flex;
   justify-content: center;
 }
+
+    .bottom-buttons-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      margin-top: 0px; /* Adjust the margin as needed */
+    }
+
+    .bottom-buttons {
+      width: 100%;
+    }
+
+    .bottom-buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db; /* Choose your preferred color */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;

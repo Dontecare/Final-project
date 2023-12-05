@@ -207,21 +207,6 @@ table {
   border-spacing: 0;
 }
 
-/* Sass variables ------------------------------------------------------------------
-------------------------------------------------------------------------------------
---------------------------------------------------------------------------------- */
-@font-face {
-  font-family: "regardsregular";
-  src: url("regards-webfont.woff2") format("woff2"), url("regards-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "regardsregular";
-  src: url("regards-webfont.woff2") format("woff2"), url("regards-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /* Layout styles -------------------------------------------------------------------
 ------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------- */
@@ -1183,3 +1168,4 @@ height: auto;
   background-color: #750000;
   color:#c38528;
 }
+

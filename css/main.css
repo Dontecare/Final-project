@@ -1,3 +1,38 @@
+.video-item {
+  display: none; /* Hide all video items by default */
+}
+
+.video-item.active {
+  display: block; /* Show the active video item */
+}
+
+.swapButton {
+  display: block; /* Ensure the button takes up full width */
+  margin: 20px auto; /* Center the button horizontally */
+  color: #ab7626; /* Change the text color */
+  background-color: #ff0000; /* Change the background color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  cursor: pointer; /* Add cursor on hover */
+  border-radius: 20px; /* Add some rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* Use linear gradient for background */
+  background-image: linear-gradient(to bottom,#ce0000, #242423);
+}
+
+.swapButton:hover {
+  box-shadow: 0px 8px 16px rgba(255, 217, 0, 0.2);
+  /* Add a slight transform to simulate depth */
+  transform: translateY(-2px);
+}
+
+.swapButton:active {
+  /* Add deeper shadow and move button down when clicked */
+  box-shadow: 0px 12px 20px rgba(255, 0, 0, 0.3);
+  transform: translateY(1px);
+}
+
 #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -217,7 +252,9 @@ table {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #4e3000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-image: linear-gradient(to right, #4e3000, #000000, #4e3000);
   color: #4b0000e3;
   text-shadow: 2px 2px 4px #000000;
   margin: 0;
@@ -254,15 +291,18 @@ body {
 }
 
 .section-main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 66.10169492%; 
+  margin: 0 auto; /* Center the element horizontally */
   color: #ab7626;
+  text-align: center; /* Center the text within the element */
+  width: 100%; /* Set width to 100% to ensure it occupies the full width of its container */
 }
 
-
 section {
-  background: #b7b7b7;
+  background: linear-gradient(to bottom right, #8ce9ff, #8d754d); /* Apply a gradient background */
+  box-shadow: inset 70px 60px 40px rgba(0, 0, 0, 0.2); /* Add an inset shadow effect */
+  /* background: linear-gradient(to bottom right, #b7b7b7, #8d754d);  */
+  /* box-shadow: inset 20px 20px 220px rgba(0, 0, 0, 0.2);  */
+  /* background: #b7b7b7; */
   /* background: #d4a867; */
   /* background: #bfb3a1; */
   /* background: #faefdd; */
@@ -270,7 +310,8 @@ section {
 }
 
 .site-header {
-  background: #1d1d19;
+  background-image: linear-gradient(to bottom, #31312c, rgba(0, 0, 0, 0.9));
+  /* background: #1d1d19; */
   /* background: #060605b8; */
   /* background: #180a01; */
   /* background: #2C2622; */
@@ -354,7 +395,7 @@ strong {
 ------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------- */
 footer {
-  background: #4b0000e3;
+  background-image: linear-gradient(to bottom, #4b0000e3, #242423);
 }
 header .site-header-wrapper,
 footer .site-header-wrapper,
@@ -1178,15 +1219,23 @@ height: auto;
 .bottom-buttons a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #490400; /* Choose your preferred color */
+  background-image: linear-gradient(to bottom, #4b0000e3, #242423);
   color: #ab7626;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease; /* Smooth transition for color change */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .bottom-buttons a:hover {
   background-color: #750000;
-  color:#c38528;
+  color: #c38528;
+  box-shadow: 0px 8px 16px rgba(255, 217, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.bottom-buttons a:active {
+  box-shadow: 0px 12px 20px rgba(255, 0, 0, 0.3);
+  transform: translateY(1px);
 }
 

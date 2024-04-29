@@ -153,3 +153,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial check when the page loads
   checkSection();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get references to video items and swap button
+  const videoItems = document.querySelectorAll('.video-item');
+  const swapButton = document.getElementById('swapButton');
+
+  // Add event listener to the swap button
+  swapButton.addEventListener('click', function() {
+    // Find the active video item
+    const activeVideoItem = document.querySelector('.video-item.active');
+
+    // Find the index of the active video item
+    const activeIndex = Array.from(videoItems).indexOf(activeVideoItem);
+
+    // Calculate the index of the next video item to swap
+    const nextIndex = (activeIndex + 1) % videoItems.length;
+
+    // Remove active class from the current active video item
+    activeVideoItem.classList.remove('active');
+
+    // Add active class to the next video item
+    videoItems[nextIndex].classList.add('active');
+  });
+});

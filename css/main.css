@@ -137,6 +137,10 @@ body {
       background: url("../img/photography/photo.jpg")
         no-repeat 50% / cover;
     }
+    &:nth-of-type(4) {
+      background: url("../img/painting/IMG_9676.jpg")
+        no-repeat 50% / cover;
+    }
     
     .links {
       padding: 30px;
@@ -792,7 +796,7 @@ footer.site-header .site-page a {
 .portfolio-info .portfolio-image {
   border: 0.5px solid #2C2622;
   margin: 0 40px 24px 0;
-  box-shadow: inset 20em 10em #2c2622;
+  box-shadow: inset 30em 20em #2c2622;
   padding: 10px;
   width: 33%;
 } 
@@ -873,6 +877,23 @@ height: auto;
   width: 100%;
   height: auto;
   }
+
+
+/* Video styles -------------------------------------------------------------------
+------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------- */
+.vids {
+  width: 100%;
+  height:auto
+}
+
+.vid-image {
+    border: 0.5px solid #2C2622;
+    margin: 0 40px 24px 0;
+    box-shadow: inset 20em 40em #2c2622;
+    padding: 10px;
+}
+
 
 /* Tablet styles -------------------------------------------------------------------
 ------------------------------------------------------------------------------------

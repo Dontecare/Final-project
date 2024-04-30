@@ -180,23 +180,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Expanding image carousel
 
-const carousel = document.getElementById('carousel');
-let startX = 0;
-let scrolling = false;
+document.addEventListener('DOMContentLoaded', function () {
+  const items = document.querySelectorAll('.item');
 
-carousel.addEventListener('touchstart', (e) => {
-  startX = e.touches[0].clientX;
-  scrolling = true;
+  items.forEach(function (item) {
+      item.addEventListener('touchstart', function () {
+          // Add your code to activate the carousel here
+      });
+  });
+
+  // Add other JavaScript functionalities here
 });
 
-carousel.addEventListener('touchmove', (e) => {
-  if (scrolling) {
-    const deltaX = e.touches[0].clientX - startX;
-    carousel.scrollLeft -= deltaX;
-    startX = e.touches[0].clientX;
-  }
-});
-
-carousel.addEventListener('touchend', () => {
-  scrolling = false;
-});

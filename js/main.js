@@ -179,16 +179,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Expanding image carousel
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselItems = document.querySelectorAll('.item');
 
-document.addEventListener('DOMContentLoaded', function () {
-  const items = document.querySelectorAll('.item');
-
-  items.forEach(function (item) {
-      item.addEventListener('touchstart', function () {
-          // Add your code to activate the carousel here
+  carouselItems.forEach(item => {
+      item.addEventListener('click', function() {
+          const selectItem = this.querySelector('.select-item');
+          if (selectItem.style.opacity === '0') {
+              // Toggle the select-item visibility if it's currently hidden
+              selectItem.style.opacity = '1';
+              selectItem.style.transform = 'translatey(0%)';
+              selectItem.style.visibility = 'visible';
+          } else {
+              // Hide the select-item if it's currently visible
+              selectItem.style.opacity = '0';
+              selectItem.style.transform = 'translatey(100%)';
+              selectItem.style.visibility = 'hidden';
+          }
       });
   });
-
-  // Add other JavaScript functionalities here
 });
+
+
 

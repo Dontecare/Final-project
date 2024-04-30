@@ -177,3 +177,26 @@ document.addEventListener("DOMContentLoaded", function() {
     videoItems[nextIndex].classList.add('active');
   });
 });
+
+// Expanding image carousel
+
+const carousel = document.getElementById('carousel');
+let startX = 0;
+let scrolling = false;
+
+carousel.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+  scrolling = true;
+});
+
+carousel.addEventListener('touchmove', (e) => {
+  if (scrolling) {
+    const deltaX = e.touches[0].clientX - startX;
+    carousel.scrollLeft -= deltaX;
+    startX = e.touches[0].clientX;
+  }
+});
+
+carousel.addEventListener('touchend', () => {
+  scrolling = false;
+});

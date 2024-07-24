@@ -255,7 +255,7 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   background-image: linear-gradient(to right, #4e3000, #000000, #4e3000);
-  color: #4b0000e3;
+  color: #11100f;
   text-shadow: 2px 2px 4px #000000;
   margin: 0;
   height: 100%;
@@ -268,7 +268,6 @@ body {
 }
 
 .site-main-wrapper {
-  margin: 24px;
   border: 1px solid black;
   overflow: hidden;
 }
@@ -292,14 +291,14 @@ body {
 
 .section-main {
   margin: 0 auto; /* Center the element horizontally */
-  color: #ab7626;
+  color: #a67d44;
   text-align: center; /* Center the text within the element */
   width: 100%; /* Set width to 100% to ensure it occupies the full width of its container */
 }
 
 section {
-  background: linear-gradient(to bottom right, #8ce9ff, #8d754d); /* Apply a gradient background */
-  box-shadow: inset 70px 60px 40px rgba(0, 0, 0, 0.2); /* Add an inset shadow effect */
+  background-color: #cdbcab; 
+  box-shadow: inset 40px 30px 60px rgba(0, 0, 0, 0.2); /* Add an inset shadow effect */
   /* background: linear-gradient(to bottom right, #b7b7b7, #8d754d);  */
   /* box-shadow: inset 20px 20px 220px rgba(0, 0, 0, 0.2);  */
   /* background: #b7b7b7; */
@@ -315,7 +314,7 @@ section {
   /* background: #060605b8; */
   /* background: #180a01; */
   /* background: #2C2622; */
-  color: #ff9800;
+  color: #a67d44;
 }
 
 
@@ -689,7 +688,7 @@ footer.site-header .site-page a {
   font-style: normal;
   letter-spacing: -0.005em;
   font-size: 14px;
-  color: #c47500;
+  color: #a67d44;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -718,7 +717,7 @@ footer.site-header .site-page a {
   text-decoration: underline;
 }
 .philosophy a h3 {
-  color: #FF9800;
+  color: #a67d44;
 }
 .philosophy p:after {
   content: "↗";
@@ -1082,9 +1081,6 @@ height: auto;
 }
 
 @media only screen and (max-width: 480px) {
-  .site-main-wrapper {
-    margin: 16px;
-  }
   .section-border {
     padding: 16px;
   }
